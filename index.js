@@ -17,7 +17,7 @@ function onSuccess(ruta) { //ruta de la imagen
 		alert("No se pudo subir :(");
 	}
 	
-	var uri = encodeURI("200.26.189.133/~ucymxbzr/fotos/upload.php");
+	var uri = encodeURI("http://200.26.189.133/~ucymxbzr/fotos/upload.php");
 
 	var options = new FileUploadOptions();
 	options.fileKey="foto"; //Nombre con el que lo leo en el servidor
