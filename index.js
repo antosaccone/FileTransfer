@@ -27,7 +27,7 @@ function onSuccess(ruta) { //ruta de la imagen
 	var ft = new FileTransfer();
 	ft.onprogress = function(progressEvent) {
 		if (progressEvent.lengthComputable) {
-		  var percent = progressEvent.loaded/progressEvent.total;
+		  var percent = progressEvent.loaded/progressEvent.total*100;
 		  $("#porcentaje").html("Subido: " + percent + "%");
 		}
 	};
