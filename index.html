@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<title>Ejemplo de Cámara</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="index.js"></script>
+<style>
+#myImage{
+	max-width:100%;
+	height:auto;
+}
+</style>
+</head>
+
+<body>
+
+<div data-role="page">
+	<button id="boton" class="ui-btn-b" type="button">Sacar Foto</button>
+    <p id="porcentaje"></p>
+    <img id="myImage">
+</div>
+
+<script>
+	document.addEventListener("deviceready", onDeviceReady, false);
+		
+	function onDeviceReady() {
+		$("#boton").click(function(){
+			sacaFoto();
+		});
+	}
+</script>
+
+</body>
+</html>
